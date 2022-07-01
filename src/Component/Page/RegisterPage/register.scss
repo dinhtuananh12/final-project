@@ -1,0 +1,147 @@
+$form-btn-color: #ff8917;
+$background-color: #fff;
+#header {
+   background-color: $form-btn-color;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   .header-img {
+      width: 110px;
+      height: 110px;
+   }
+   .header-content {
+      width: 350px;
+      .header-content_number {
+         color: $background-color;
+         font-weight: 600;
+         margin: 0 10px;
+         svg {
+            background-color: $background-color;
+            margin: 0px 7px -3px;
+         }
+      }
+      .form-btn_login {
+         background-color: $background-color;
+         border-color: $form-btn-color;
+         color: $form-btn-color;
+         margin: 0 10px;
+         border-radius: 5px;
+      }
+      .form-btn_register {
+         background-color: $background-color;
+         color: $form-btn-color;
+         border: none;
+         margin: 0 0 0 10px;
+         border-radius: 5px;
+      }
+   }
+}
+#content {
+   background-color: $background-color;
+   #form-wrap {
+      width: 30%;
+      margin: 20px auto;
+      .heading {
+         text-align: center;
+      }
+      #form_input_email {
+         padding: 7px 10px;
+      }
+      #form_input_password {
+         padding: 3px 0px;
+      }
+
+      .ant-form-item {
+         box-sizing: border-box;
+         padding: 0;
+         color: rgba(0, 0, 0, 0.85);
+         font-size: 14px;
+         font-variant: tabular-nums;
+         line-height: 1.5715;
+         list-style: none;
+         font-feature-settings: "tnum";
+         margin: 0 0 20px;
+         vertical-align: top;
+         transition: margin-bottom 0.3s linear 17ms;
+      }
+      .forgot_password a {
+         color: #ff8917;
+         font-weight: 400;
+      }
+      #form-btn {
+         width: 100%;
+         background-color: $form-btn-color;
+         text-transform: uppercase;
+         font-size: 16px;
+         padding: 6.4px 15px;
+         height: 40px;
+         border: none;
+         font-weight: 500;
+      }
+      .text-dashed-textCenter {
+         text-align: center;
+         border-top: 1px solid #d9d9d9;
+         line-height: 0.1em;
+         margin: 10px 0 20px;
+         span {
+            background: $background-color;
+            padding: 0 10px;
+         }
+      }
+      .form-btn-connect {
+         width: 100%;
+         background-color: $background-color;
+         padding: 6.4px 15px;
+         height: 40px;
+         color: #000;
+         font-size: 16px;
+         border: 1px solid #ccc;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         span {
+            margin: 0 5px;
+         }
+      }
+      .form-btn-connect:hover {
+         color: #40a9ff;
+         background: $background-color;
+         border: 1px solid #40a9ff;
+      }
+      .register-account {
+         #register-link {
+            color: $form-btn-color;
+            font-weight: 600;
+         }
+         .register-link {
+            text-decoration: underline;
+            color: $form-btn-color;
+         }
+      }
+   }
+}
+#footer {
+   height: 70px;
+   background-color: $form-btn-color;
+   .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .footer__copyright {
+         color: $background-color;
+      }
+      .footer__social {
+         width: 330px;
+         .footer__link {
+            color: $background-color;
+            margin: 0 10px;
+         }
+         svg {
+            margin: 0px 5px -3px;
+         }
+         .footer__link:last-child {
+            margin: 0 0 0 10px;
+         }
+      }
+   }
+}
