@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Form, Input } from "antd";
 import { Layout } from "antd";
-import "./register.scss";
-import logo from "./logo.png";
+import "./login.scss";
+import logo from "./../../assets/logo.png";
 const Login = () => {
    const { Header, Footer, Content } = Layout;
    return (
@@ -52,7 +52,7 @@ const Login = () => {
             </Header>
             <Content id="content">
                <Form id="form-wrap" name="basic">
-                  <h1 className="heading">Đăng ký</h1>
+                  <h1 className="heading">Đăng nhập</h1>
                   <Form.Item
                      name="username"
                      rules={[
@@ -79,32 +79,17 @@ const Login = () => {
                   >
                      <Input.Password
                         id="form_input_password"
-                        placeholder="Nhập lại mật khẩu"
-                     />
-                  </Form.Item>
-                  <Form.Item
-                     name="password"
-                     rules={[
-                        {
-                           required: true,
-                           message: "Please input your password!",
-                        },
-                     ]}
-                  >
-                     <Input.Password
-                        id="form_input_password"
                         placeholder="Mật khẩu"
                      />
                   </Form.Item>
-                  <div className="block_message">
-                     <p className="message">
-                        Chúng tôi sẽ gửi mã xác thực cho bạn để đăng ký tài
-                        khoản
-                     </p>
+                  <div className="block_forgot_password">
+                     <h3 className="forgot_password">
+                        <a href="/">Quên mật khẩu?</a>
+                     </h3>
                   </div>
                   <Form.Item>
                      <Button id="form-btn" type="primary" htmlType="button">
-                        Tiếp tục
+                        Đăng nhập
                      </Button>
                   </Form.Item>
                   <div className="text-dashed-textCenter">
@@ -171,21 +156,10 @@ const Login = () => {
                      </Form.Item>
                   </div>
                   <p className="register-account">
-                     Bạn đã có tài khoản? &nbsp;
+                     Chưa có tài khoản? &nbsp;
                      <a id="register-link" href="/">
-                        Đăng nhập
+                        Đăng ký
                      </a>
-                  </p>
-                  <p className="register-account">
-                     Tiếp tục nghĩa là bạn đồng ý với các&nbsp;
-                     <a className="register-link" href="/">
-                        Điều khoản và điều kiện
-                     </a>
-                     ,&nbsp;cũng như các&nbsp;
-                     <a className="register-link" href="/">
-                        Chính sách bảo mật
-                     </a>
-                     &nbsp;của VNTRIP
                   </p>
                </Form>
             </Content>

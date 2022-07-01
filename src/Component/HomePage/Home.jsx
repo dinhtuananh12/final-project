@@ -1,8 +1,8 @@
 import React from "react";
 import { Layout } from "antd";
 import { Button } from "antd";
-import logo from "./logo.png";
-import banner from "./banner.png";
+import logo from "./../../assets/logo.png";
+import banner from "./../../assets/banner.png";
 import "./home.scss";
 const Home = () => {
    const { Header, Footer, Content } = Layout;
