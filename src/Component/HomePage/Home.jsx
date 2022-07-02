@@ -3,6 +3,10 @@ import { Layout } from "antd";
 import { Button } from "antd";
 import logo from "./../../assets/logo.png";
 import banner from "./../../assets/banner.png";
+import member from "./../../assets/membership.png";
+import appBox from "./../../assets/appBox.png";
+import appStore from "./../../assets/appStore.png";
+import googleplay from "./../../assets/googlePlay.png";
 import "./home.scss";
 const Home = () => {
    const { Header, Footer, Content } = Layout;
@@ -292,33 +296,142 @@ const Home = () => {
                               src="https://i.vntrip.vn/260x150/smart/https://statics.vntrip.vn/uploads/deal/20220608_277400_1.jpg"
                               alt=""
                            />
-                           <h1>
+                           <p>
                               [SAPA CAT CAT HILL RESORT & SPA] - HI SUMMER 2022
-                           </h1>
-                           <p>Combo: Khách sạn</p>
-                           <span>1.650.000₫</span>
+                           </p>
+                           <div>
+                              <span>Combo:</span>
+                              <span>Khách sạn</span>
+                           </div>
+                           <span className="price">1.650.000₫</span>
                         </div>
                         <div className="card">
                            <img
-                              src="https://i.vntrip.vn/260x150/smart/https://statics.vntrip.vn/uploads/deal/20220608_277400_1.jpg"
+                              src="https://i.vntrip.vn/260x150/smart/https://statics.vntrip.vn/uploads/deal/20220602_299630_358527881.jpg"
                               alt=""
                            />
-                           <h1>
-                              [SAPA CAT CAT HILL RESORT & SPA] - HI SUMMER 2022
-                           </h1>
-                           <p>Combo: Khách sạn</p>
-                           <span>1.650.000₫</span>
+                           <p>
+                              [SAILING CLUB SIGNATURE RESORT PHÚ QUỐC] ƯU ĐÃI
+                              KHAI TRƯƠNG - Miễn phí đón tiễn sân bay
+                           </p>
+                           <div>
+                              <span>Combo:</span>
+                              <span>Khách sạn</span>
+                           </div>
+                           <span className="price">6.400.000₫</span>
                         </div>
                         <div className="card">
                            <img
-                              src="https://i.vntrip.vn/260x150/smart/https://statics.vntrip.vn/uploads/deal/20220608_277400_1.jpg"
+                              src="https://i.vntrip.vn/260x150/smart/https://statics.vntrip.vn/uploads/deal/20220601_352000_4.jpg"
                               alt=""
                            />
-                           <h1>
-                              [SAPA CAT CAT HILL RESORT & SPA] - HI SUMMER 2022
-                           </h1>
-                           <p>Combo: Khách sạn</p>
-                           <span>1.650.000₫</span>
+                           <p>
+                              [VEDANA NINH BÌNH RESORT] - KHUYẾN MÃI DỊP KHAI
+                              TRƯƠNG
+                           </p>
+                           <div>
+                              <span>Combo:</span>
+                              <span>Khách sạn</span>
+                           </div>
+                           <span className="price">1.650.000₫</span>
+                        </div>
+                        <div className="card">
+                           <img
+                              src="https://i.vntrip.vn/260x150/smart/https://statics.vntrip.vn/uploads/deal/20220627_310150_283035863.jpg"
+                              alt=""
+                           />
+                           <p>[ SALINDA RESORT- SUMMER PROMOTION]</p>
+                           <div>
+                              <span>Combo:</span>
+                              <span>Khách sạn</span>
+                           </div>
+                           <span className="price">2.185.000₫</span>
+                        </div>
+                        <div className="card">
+                           <img
+                              src="https://i.vntrip.vn/260x150/smart/https://statics.vntrip.vn/uploads/deal/20220603_265170_4D218C95765843419C23_18222553.jpg"
+                              alt=""
+                           />
+                           <p>
+                              [ LA SAPINETTE HOTEL DALAT] - PACKAGE 2 NGÀY 1 ĐÊM
+                           </p>
+                           <div>
+                              <span>Combo:</span>
+                              <span>Khách sạn</span>
+                           </div>
+                           <span className="price">1.725.000₫</span>
+                        </div>
+                        <div className="card">
+                           <img
+                              src="https://i.vntrip.vn/260x150/smart/https://statics.vntrip.vn/uploads/deal/20220603_111450_12051_1529322604_exterior_2_1.jpg"
+                              alt=""
+                           />
+                           <p>[ BOTON BLUE HOTEL & SPA] - MÙA HÈ SIÊU ƯU ĐÃI</p>
+                           <div>
+                              <span>Combo:</span>
+                              <span>Khách sạn</span>
+                           </div>
+                           <span className="price">920.000₫</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div className="memberShipBox">
+                  <div className="container">
+                     <div className="row">
+                        <div className="box-left">
+                           <img src={member} alt="" />
+                        </div>
+                        <div className="box-right">
+                           <h2 className="title">
+                              Ưu đãi đặc biệt cho thành viên Vntrip
+                           </h2>
+                           <p className="content-bold">
+                              Giảm thêm tối thiểu 10% cho khách hàng là thành
+                              viên Vntrip đảm bảo giá tốt nhất.
+                           </p>
+                           <p className="content">
+                              Ưu đãi đặc biệt chỉ áp dụng khi đặt phòng tại các
+                              khách sạn 4 sao, 5 sao trên Vntrip
+                           </p>
+                           <div className="membership-btn">
+                              <button type="button" className="btn-orange">
+                                 Đăng ký thành viên
+                              </button>
+                              <div className="block">
+                                 <p className="semibold">
+                                    Bạn đã là thành viên?
+                                 </p>
+                                 <button type="button" className="bold">
+                                    Đăng nhập ngay
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div className="appbox">
+                  <div className="container">
+                     <div className="appbox__iphone">
+                        <img src={appBox} alt="" />
+                     </div>
+                     <div className="appbox__content">
+                        <h2 className="bold">
+                           Du lịch dễ dàng với một ứng dụng duy nhất.
+                        </h2>
+                        <p>
+                           Dùng ứng dụng để đặt vé máy bay, khách sạn chỉ trong
+                           vài giây cùng với thông tin cập nhật về chuyến bay
+                           theo thời gian thực.
+                        </p>
+                        <div className="appbox__logo">
+                           <a href="/">
+                              <img src={appStore} alt="" />
+                           </a>
+                           <a href="/">
+                              <img src={googleplay} alt="" />
+                           </a>
                         </div>
                      </div>
                   </div>
