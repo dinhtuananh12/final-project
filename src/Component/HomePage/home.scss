@@ -293,4 +293,87 @@ $background-color: #fff;
 }
 #footer {
    background-color: $background-color;
+   .container {
+      margin: 0 auto;
+      .footer__top {
+         display: flex;
+         .footer__nav {
+            width: 20%;
+            a {
+               display: block;
+               text-decoration: none;
+               margin-bottom: 5px;
+               color: #000;
+            }
+            a:hover {
+               text-decoration: underline;
+            }
+         }
+         .footer__app {
+            width: 20%;
+            padding: 5px 15px;
+            img {
+               display: block;
+               width: 120px;
+               margin-bottom: 10px;
+            }
+         }
+         .footer__contact {
+            width: 30%;
+            p {
+               margin-bottom: 5px;
+            }
+            .semibold {
+               font-weight: 600;
+               .green {
+                  color: #389e0d;
+               }
+            }
+         }
+         .footer__form {
+            width: 30%;
+            .form {
+               display: flex;
+               #form-input {
+                  padding: 5px;
+                  flex: 1;
+               }
+               #button-btn {
+                  padding: 5px;
+                  font-weight: 600;
+                  background-color: $form-btn-color;
+                  border-color: $form-btn-color;
+               }
+            }
+            .footer__bocongthuong {
+               img {
+                  width: 150px;
+               }
+            }
+         }
+      }
+   }
+}
+.footer__bottom {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: $form-btn-color;
+   padding: 15px;
+   .footer__copyright {
+      color: $background-color;
+   }
+   .footer__social {
+      width: 330px;
+      .footer__link {
+         color: $background-color;
+         margin: 0 10px;
+      }
+      svg {
+         margin: 0px 5px -3px;
+      }
+      .footer__link:last-child {
+         margin: 0 0 0 10px;
+      }
+   }
 }
