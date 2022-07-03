@@ -258,6 +258,7 @@ $background-color: #fff;
       background-size: cover;
       padding: 50px 0 0;
       background-attachment: fixed;
+      margin-bottom: 15px;
       .container {
          display: flex;
          align-items: center;
@@ -290,13 +291,13 @@ $background-color: #fff;
          }
       }
    }
-}
-#footer {
-   background-color: $background-color;
    .container {
       margin: 0 auto;
+      padding: 0 15px;
       .footer__top {
          display: flex;
+         border-top: 1px solid $form-btn-color;
+         margin: 0 30px;
          .footer__nav {
             width: 20%;
             a {
@@ -354,26 +355,28 @@ $background-color: #fff;
       }
    }
 }
-.footer__bottom {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+#footer {
    background-color: $form-btn-color;
-   padding: 15px;
-   .footer__copyright {
-      color: $background-color;
-   }
-   .footer__social {
-      width: 330px;
-      .footer__link {
+   padding: 25px 45px;
+   .footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .footer__copyright {
          color: $background-color;
-         margin: 0 10px;
       }
-      svg {
-         margin: 0px 5px -3px;
-      }
-      .footer__link:last-child {
-         margin: 0 0 0 10px;
+      .footer__social {
+         width: 330px;
+         .footer__link {
+            color: $background-color;
+            margin: 0 10px;
+         }
+         svg {
+            margin: 0px 5px -3px;
+         }
+         .footer__link:last-child {
+            margin: 0 0 0 10px;
+         }
       }
    }
 }
