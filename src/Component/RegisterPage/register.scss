@@ -1,41 +1,5 @@
 $form-btn-color: #ff8917;
 $background-color: #fff;
-#header {
-   background-color: $form-btn-color;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   .header-img {
-      width: 110px;
-      height: 110px;
-   }
-   .header-content {
-      width: 350px;
-      .header-content_number {
-         color: $background-color;
-         font-weight: 600;
-         margin: 0 10px;
-         svg {
-            background-color: $background-color;
-            margin: 0px 7px -3px;
-         }
-      }
-      .form-btn_login {
-         background-color: $background-color;
-         border-color: $form-btn-color;
-         color: $form-btn-color;
-         margin: 0 10px;
-         border-radius: 5px;
-      }
-      .form-btn_register {
-         background-color: $background-color;
-         color: $form-btn-color;
-         border: none;
-         margin: 0 0 0 10px;
-         border-radius: 5px;
-      }
-   }
-}
 #content {
    background-color: $background-color;
    #form-wrap {
@@ -47,8 +11,9 @@ $background-color: #fff;
       #form_input_email {
          padding: 7px 10px;
       }
-      #form_input_password {
-         padding: 3px 0px;
+      .form-input__password {
+         padding: 7px 10px;
+         margin: 0 0 20px;
       }
 
       .ant-form-item {
@@ -116,31 +81,6 @@ $background-color: #fff;
          .register-link {
             text-decoration: underline;
             color: $form-btn-color;
-         }
-      }
-   }
-}
-#footer {
-   height: 70px;
-   background-color: $form-btn-color;
-   .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .footer__copyright {
-         color: $background-color;
-      }
-      .footer__social {
-         width: 330px;
-         .footer__link {
-            color: $background-color;
-            margin: 0 10px;
-         }
-         svg {
-            margin: 0px 5px -3px;
-         }
-         .footer__link:last-child {
-            margin: 0 0 0 10px;
          }
       }
    }

@@ -1,382 +1,254 @@
-$form-btn-color: #ff8917;
-$background-color: #fff;
-#header {
-   background-color: $form-btn-color;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   .header-img {
-      width: 110px;
-      height: 110px;
+// for all
+.container {
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+main.ant-layout-content {
+   background-color: #fff;
+}
+// slide
+.slide {
+   position: relative;
+   .slide__img {
+      width: 100%;
+      display: block;
    }
-   .header-content {
-      width: 350px;
-      .header-content_number {
-         color: $background-color;
-         font-weight: 600;
-         margin: 0 10px;
-         svg {
-            background-color: $background-color;
-            margin: 0px 7px -3px;
+}
+// searchBox
+.searchBox {
+}
+// reasonCombo
+.reasonCombo {
+   margin-top: 70px;
+   margin-bottom: 40px;
+   .container {
+      .reasonComboTitle {
+         text-align: center;
+         margin-bottom: 24px;
+         .semibold {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            .yellow {
+               color: #ff8917;
+            }
          }
       }
-      .form-btn_login {
-         background-color: $background-color;
-         border-color: $form-btn-color;
-         color: $form-btn-color;
-         margin: 0 10px;
-         border-radius: 5px;
-      }
-      .form-btn_register {
-         background-color: $background-color;
-         color: $form-btn-color;
-         border: none;
-         margin: 0 0 0 10px;
-         border-radius: 5px;
+      .reasonComboContent {
+         .reasonComboItems {
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            .img {
+               padding-right: 17px;
+            }
+            .text {
+               .title {
+                  font-size: 18px;
+                  font-weight: 600;
+                  color: #262626;
+                  padding: 0;
+                  border: none;
+               }
+               p {
+                  font-size: 14px;
+                  color: #595959;
+               }
+            }
+         }
       }
    }
 }
-#content {
-   background-color: $background-color;
-   .banner {
-      width: 100%;
-      height: 100%;
-   }
-   .box-days {
-      background-color: $background-color;
-      width: 100%;
-      .days {
-         width: 50%;
-         border: 1px solid $form-btn-color;
-         margin: 20px auto;
-         display: flex;
-         justify-content: center;
-         flex-direction: column;
-         align-items: center;
-         .label {
-            text-align: left;
-         }
-         .choose {
-            width: 90%;
-            padding: 5px 10px;
-            margin: 10px 0;
-         }
-         .choose:focus {
-            outline: none;
-         }
-         #btn {
-            width: 90%;
-            padding: 10px 10px;
-            margin: 10px 0;
-            background-color: $form-btn-color;
-            border: none;
-            font-size: 15px;
-            color: $background-color;
-            font-weight: 500;
-            cursor: pointer;
-         }
-      }
-   }
-   .why-choose {
-      margin: 70px auto;
-      padding: 0 50px;
-      width: 100%;
-      .title {
+// hotDeal
+.hotDeal {
+   padding: 50px 0 30px;
+   background: #fafafa;
+   .container {
+      .text-center {
+         margin-bottom: 25px;
+         font-size: 24px;
+         font-weight: 700;
          text-align: center;
-         font-size: 30px;
-         span {
-            color: $form-btn-color;
-         }
       }
-      .wrap {
-         display: flex;
-         justify-content: space-between;
-         .details {
-            display: flex;
-            align-items: center;
-            width: 300px;
-            .svg-icon {
-               width: 80px;
-               height: 80px;
-               margin-right: 10px;
-            }
-            div > h5 {
-               font-size: 18px;
-               margin: 0;
-               font-weight: 600;
-            }
-         }
-      }
-   }
-   .popular {
-      background-color: #fafafa;
-      .container {
-         width: 60%;
-         margin: 30px auto;
-         .title {
-            text-align: center;
-         }
-         .row {
-            display: grid;
-            grid-template-columns: auto auto;
-            gap: 10px;
-            .card {
-               .card-title {
-                  text-align: center;
-               }
-               img {
-                  border-radius: 5px;
-               }
-            }
-         }
-      }
-   }
-   .hot-deal {
-      background-color: #fafafa;
-      cursor: pointer;
-      .container {
-         margin: 70px auto;
-         width: 100%;
-         .title {
-            text-align: center;
-            font-size: 30px;
-         }
-         .box {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            justify-content: center;
-            gap: 40px;
-            .card {
-               box-shadow: 2px 4px 5px rgb(0 0 0 / 50%);
-               width: 370px;
-               border-radius: 5px;
-               img {
-                  width: 100%;
-                  border-top-left-radius: 5px;
-                  border-top-right-radius: 5px;
-               }
-               p {
-                  font-weight: bold;
-                  height: 48px;
-                  display: -webkit-box;
-                  -webkit-line-clamp: 2;
-                  -webkit-box-orient: vertical;
-                  overflow: hidden;
-                  -webkit-text-overflow: ellipsis;
-                  text-overflow: ellipsis;
-                  margin: 10px;
-                  font-size: 16px;
-               }
-               div {
-                  margin: 10px;
-                  display: flex;
-                  font-size: 16px;
-                  span:first-child {
-                     flex-shrink: 1;
-                     width: 70px;
-                  }
-                  span:last-child {
-                     color: $form-btn-color;
+      .listDeal {
+         .listDeal__item {
+            background-color: #fff;
+            border-radius: 5px;
+            height: 400px;
+            box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+            .dealItem {
+               color: #000;
+               .dealItem__img {
+                  img {
+                     width: 100%;
+                     height: 100%;
+                     border-top-left-radius: 5px;
+                     border-top-right-radius: 5px;
                   }
                }
-               .price {
-                  display: block;
-                  margin: 10px 10px 40px;
-                  font-size: 26px;
-                  color: $form-btn-color;
-                  font-weight: bold;
-               }
-            }
-         }
-      }
-   }
-   .memberShipBox {
-      margin: 30px auto;
-      .container {
-         margin-right: auto;
-         margin-left: auto;
-         padding-left: 30px;
-         padding-right: 30px;
-         .row {
-            display: flex;
-            background: #fafafa;
-            justify-content: center;
-            align-items: center;
-            padding: 25px 0;
-            .box-left {
-               img {
-                  width: 290px;
-               }
-            }
-            .box-right {
-               margin: 0 70px;
-               .title {
-                  margin-bottom: 15px;
-                  font-size: 24px;
-                  font-weight: 700;
-               }
-               .content-bold {
-                  font-weight: 600;
-               }
-               .membership-btn {
-                  display: flex;
-                  align-items: center;
-                  .btn-orange {
-                     color: $background-color;
-                     background-color: $form-btn-color;
-                     border: none;
-                     border-radius: 5px;
-                     padding: 10px 10px;
-                     font-size: 15px;
-                     cursor: pointer;
+               .dealItem__cont {
+                  padding: 15px;
+                  .dealItem__title {
+                     height: 48px;
+                     display: -webkit-box;
+                     -webkit-line-clamp: 2;
+                     -webkit-box-orient: vertical;
+                     overflow: hidden;
+                     -webkit-text-overflow: ellipsis;
+                     text-overflow: ellipsis;
+                     margin-bottom: 10px;
+                     font-size: 16px;
+                     font-weight: 700;
                   }
-                  .block {
-                     margin-left: 15px;
-                     .semibold {
-                        margin-bottom: 0;
-                        color: #8c8c8c;
+                  .dealItem__type {
+                     display: flex;
+                     margin-bottom: 5px;
+                     span:first-child {
+                        width: 70px;
+                        margin-right: 5px;
                      }
-                     .bold {
-                        background: 0 0;
-                        border: none;
-                        padding: 0;
-                        color: $form-btn-color;
-                        font-weight: bold;
-                        cursor: pointer;
+                     span:last-child {
+                        width: calc(100% - 70px);
+                        white-space: nowrap;
+                        overflow: hidden;
+                        -webkit-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                        color: #ff8917;
                      }
                   }
+                  .dealItem__price {
+                     font-size: 26px;
+                     margin-top: 10px;
+                     color: #ff8917;
+                     font-weight: 700;
+                  }
                }
             }
          }
       }
    }
-   .appbox {
-      background-image: url("https://statics.vntrip.vn/images/appBox-bg.jpg");
-      background-repeat: no-repeat;
-      background-position: 50%;
-      -webkit-background-size: cover;
-      background-size: cover;
-      padding: 50px 0 0;
-      background-attachment: fixed;
-      margin-bottom: 15px;
-      .container {
+}
+// memeberShipBox
+.memberShipBox {
+   padding: 50px 0;
+   .container {
+      .row {
+         background: #fafafa;
+         padding: 25px 0;
          display: flex;
          align-items: center;
-         margin: 0 auto;
-         padding: 0 15px;
-         .appbox__iphone {
+         .membershipBox__img {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 70px 15px 0;
+            img {
+               width: 290px;
+            }
+         }
+         .memebershipBox_cont {
+            .bold {
+               margin-bottom: 15px;
+               font-size: 24px;
+               font-weight: 700;
+            }
+            .semibold {
+               font-size: 15px;
+               margin-bottom: 0;
+               font-weight: 600;
+               margin-top: 0;
+            }
+            .mb0 {
+               margin-bottom: 0;
+            }
+            .membershipBox__btn {
+               display: flex;
+               align-items: center;
+               margin-top: 15px;
+               .ant-btn {
+                  color: #fff;
+                  background-color: #ff8917;
+                  border-color: #ff8917;
+                  font-weight: 600;
+                  font-size: 15px;
+                  border-radius: 5px;
+                  height: 40px;
+               }
+               .block {
+                  margin-left: 15px;
+                  display: block;
+                  .semibold {
+                     margin-bottom: 0;
+                     color: #8c8c8c;
+                  }
+                  .outline-btn {
+                     color: #ff8917;
+                     font-weight: 600;
+                     background: 0 0;
+                     border: none;
+                     padding: 0;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+// appBox
+.appBox {
+   background-image: url("https://statics.vntrip.vn/images/appBox-bg.jpg");
+   background-repeat: no-repeat;
+   background-position: 50%;
+   -webkit-background-size: cover;
+   background-size: cover;
+   padding: 50px 0 0;
+   background-attachment: fixed;
+   .container {
+      .row {
+         display: flex;
+         align-items: center;
+         .appBox__iphone {
             padding-left: 30px;
             img {
                width: 270px;
             }
          }
-         .appbox__content {
-            width: 490px;
-            margin-left: 125px;
+         .appBox__content {
             .bold {
                font-size: 40px;
                margin-bottom: 15px;
                font-weight: 700;
             }
-         }
-         .appbox__logo {
-            display: flex;
-            margin-top: 50px;
-            a {
-               img {
-                  width: 180px;
-                  margin-right: 30px;
-               }
-            }
-         }
-      }
-   }
-   .container {
-      margin: 0 auto;
-      padding: 0 15px;
-      .footer__top {
-         display: flex;
-         border-top: 1px solid $form-btn-color;
-         margin: 0 30px;
-         .footer__nav {
-            width: 20%;
-            a {
-               display: block;
-               text-decoration: none;
-               margin-bottom: 5px;
-               color: #000;
-            }
-            a:hover {
-               text-decoration: underline;
-            }
-         }
-         .footer__app {
-            width: 20%;
-            padding: 5px 15px;
-            img {
-               display: block;
-               width: 120px;
-               margin-bottom: 10px;
-            }
-         }
-         .footer__contact {
-            width: 30%;
             p {
-               margin-bottom: 5px;
+               margin-top: 0;
             }
-            .semibold {
-               font-weight: 600;
-               .green {
-                  color: #389e0d;
-               }
-            }
-         }
-         .footer__form {
-            width: 30%;
-            .form {
+            .appBox__logo {
                display: flex;
-               #form-input {
-                  padding: 5px;
-                  flex: 1;
-               }
-               #button-btn {
-                  padding: 5px;
-                  font-weight: 600;
-                  background-color: $form-btn-color;
-                  border-color: $form-btn-color;
-               }
-            }
-            .footer__bocongthuong {
-               img {
-                  width: 150px;
+               margin-top: 50px;
+               a {
+                  margin-right: 15px;
+                  img {
+                     width: 180px;
+                  }
                }
             }
          }
       }
    }
 }
-#footer {
-   background-color: $form-btn-color;
-   padding: 25px 45px;
-   .footer__bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .footer__copyright {
-         color: $background-color;
-      }
-      .footer__social {
-         width: 330px;
-         .footer__link {
-            color: $background-color;
-            margin: 0 10px;
-         }
-         svg {
-            margin: 0px 5px -3px;
-         }
-         .footer__link:last-child {
-            margin: 0 0 0 10px;
-         }
-      }
+@media (min-width: 768px) {
+   .container {
+      width: 750px;
+   }
+}
+@media (min-width: 992px) {
+   .container {
+      width: 970px;
+   }
+}
+@media (min-width: 1200px) {
+   .container {
+      width: 1170px;
    }
 }
